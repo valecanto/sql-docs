@@ -13,11 +13,11 @@ helpviewer_keywords:
   - "tempdb database [SQL Server], about tempdb"
   - "temporary stored procedures [SQL Server]"
   - "tempdb database [SQL Server]"
-monikerRange: "=azuresqldb-current||>=sql-server-2016||>=sql-server-linux-2017||=azuresqldb-mi-current"
+monikerRange: "=azuresqldb-current || >=sql-server-2016 || >=sql-server-linux-2017 || =azuresqldb-mi-current || =fabric"
 ---
 # tempdb database
 
-[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/sql-asdb-asdbmi.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance FabricSQLDB](../../includes/applies-to-version/sql-asdb-asdbmi-fabricsqldb.md)]
 
 This article describes the `tempdb` system database, a global resource available to all users connected to an instance of [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], Azure SQL Database, or Azure SQL Managed Instance.
 
@@ -103,7 +103,9 @@ For a description of these database options, see [ALTER DATABASE SET Options (Tr
 
 The behavior of `tempdb` in Azure SQL Database differs from the behavior SQL Server, Azure SQL Managed Instance, and SQL Server on Azure VMs. 
 
-### tempdb in SQL Database
+<a id="tempdb-in-sql-database"></a>
+
+### tempdb in Azure SQL Database
 
 Single and pooled databases in [Azure SQL Database](/azure/azure-sql/database/sql-database-paas-overview) support global temporary tables and global temporary stored procedures scoped to the database level, and stored in `tempdb`.  Global temporary tables and global temporary stored procedures are shared for all users' sessions within the same database. User sessions from other databases can't access global temporary tables. For more information, see [Database scoped global temporary tables (Azure SQL Database)](../../t-sql/statements/create-table-transact-sql.md#database-scoped-global-temporary-tables-azure-sql-database).
 

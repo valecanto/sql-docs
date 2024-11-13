@@ -4,7 +4,7 @@ description: Use the mssql extension for Visual Studio Code to edit and run Tran
 author: dzsquared
 ms.author: drskwier
 ms.reviewer: maghan, mikeray
-ms.date: 09/18/2024
+ms.date: 10/17/2024
 ms.service: sql
 ms.subservice: tools-other
 ms.topic: conceptual
@@ -14,9 +14,9 @@ ms.custom:
 
 # SQL Server extension for Visual Studio Code
 
-[!INCLUDE [SQL Server ASDB, ASDBMI, ASDW](../../includes/applies-to-version/sql-asdb-asdbmi-asa.md)]
+[!INCLUDE [sql-asdb-asdbmi-asa-fabricsqldb](../../includes/applies-to-version/sql-asdb-asdbmi-asa-fabricsqldb.md)]
 
-This article shows how to use the **mssql** extension for Visual Studio Code (Visual Studio Code) to work with databases in SQL Server on Windows, macOS, and Linux, as well as Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics. The [mssql extension for Visual Studio Code](https://aka.ms/mssql-marketplace) lets you connect to a SQL Server, query with Transact-SQL (T-SQL), and view the results.
+This article shows how to use the **mssql** extension for Visual Studio Code (Visual Studio Code) to work with databases in SQL Server on Windows, macOS, and Linux, as well as Azure SQL Database, SQL database in Fabric, Azure SQL Managed Instance, and Azure Synapse Analytics. The [mssql extension for Visual Studio Code](https://aka.ms/mssql-marketplace) lets you connect to a SQL Server, query with Transact-SQL (T-SQL), and view the results.
 
 ## Create or open a SQL file
 
@@ -80,7 +80,7 @@ Beginning with mssql extension for VS Code v1.17.0:
 - The `Encrypt` property is enabled (set to `True`) by default for MSSQL provider connections
 - SQL Server must be configured with TLS certificates signed by a trusted root certificate authority
 
-In addition, if an initial connection attempt fails with encryption enabled (default), the mssql extension will provide a notification prompt with an option to attempt the connection with Trust Server Certificate enabled.
+In addition, if an initial connection attempt fails with encryption enabled (default), the mssql extension provides a notification prompt with an option to attempt the connection with Trust Server Certificate enabled.
 
 You can edit the Encrypt and Trust server certificate properties in the [user settings file](https://github.com/Microsoft/vscode-mssql/wiki/manage-connection-profiles#edit-connections-in-the-user-settings-file) (*settings.json*). The [best practice](../../relational-databases/security/securing-sql-server.md) is to support a trusted encrypted connection to the server.
 
@@ -88,7 +88,7 @@ You can edit the Encrypt and Trust server certificate properties in the [user se
 
 For users connecting to Azure SQL Database, no changes to existing, saved connections are needed; Azure SQL Database supports encrypted connections and is configured with trusted certificates.
 
-For users connecting to on-premises SQL Server, or SQL Server in a Virtual Machine, if Encrypt is set to True, ensure that you have a certificate from a trusted certificate authority (e.g. not a self-signed certificate). Alternatively, you might choose to connect without encryption (Encrypt set to False), or to trust the server certificate (Encrypt set to True and Trust server certificate set to True).
+For users connecting to on-premises SQL Server, or SQL Server in a Virtual Machine, if Encrypt is set to True, ensure that you have a certificate from a trusted certificate authority (for example, not a self-signed certificate). Alternatively, you might choose to connect without encryption (Encrypt set to False), or to trust the server certificate (Encrypt set to True and Trust server certificate set to True).
 
 ## Create a database
 
