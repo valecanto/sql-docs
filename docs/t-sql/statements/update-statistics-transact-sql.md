@@ -70,7 +70,7 @@ UPDATE STATISTICS table_or_indexed_view_name
 <update_stats_stream_option> ::=  
     [ STATS_STREAM = stats_stream ]  
     [ ROWCOUNT = numeric_constant ]  
-    [ PAGECOUNT = numeric_contant ]  
+    [ PAGECOUNT = numeric_constant ]  
 ```  
  
 ```syntaxsql

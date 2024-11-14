@@ -137,8 +137,11 @@ ms.custom:
 -   Manage a service application.  
   
  ![Arrow icon used with Back to Top link](/analysis-services/analysis-services/instances/media/uparrow16x16.gif "Arrow icon used with Back to Top link") [Troubleshoot Problems with SharePoint Mode installations](#bkmk_tshoot_sharepoint)  
-  
-###   <a name="bkmk_sharepoint_not_configured"></a> Setup fails on a computer with SharePoint installed but it is not configured    
+
+<a id="bkmk_sharepoint_not_configured"></a>
+
+### Setup fails on a computer with SharePoint installed but it is not configured
+
  **Description:** If you select to install Reporting Services SharePoint Mode on a computer that has SharePoint installed but SharePoint is not configured, you will see a message similar to the following and setup will stop:  
   
  SQL Server Setup has stopped working  
