@@ -24,11 +24,11 @@ monikerRange: "=azuresqldb-current||=azuresqldb-mi-current"
 [!INCLUDE [Azure SQL Database Azure SQL Managed Instance](../../includes/applies-to-version/asdb-asdbmi.md)]
 
 > [!NOTE]
-> The `sys.dm_os_memory_health_history` dynamic management view is in preview. Schema and data are subject to change.
+> The `sys.dm_os_memory_health_history` dynamic management view is in preview. Schema and provided data are subject to change.
 
 Provides memory health snapshots for a database engine instance. Each row represents a snapshot of recent memory usage that includes the severity of a memory health issue, if any.
 
-For more information on memory health issues in [!INCLUDE [ssazure-sqldb](../../includes/ssazure-sqldb.md)], see [Troubleshoot out of memory errors in Azure SQL Database](/azure/azure-sql/database/troubleshoot-memory-errors-issues).
+For more information on troubleshooting insufficient memory in [!INCLUDE [ssazure-sqldb](../../includes/ssazure-sqldb.md)], see [Troubleshoot out of memory errors in Azure SQL Database](/azure/azure-sql/database/troubleshoot-memory-errors-issues).
 
 In Azure SQL Managed Instance, this view is available only on instances with the **always-up-to-date** update policy.
 
@@ -38,7 +38,7 @@ In Azure SQL Managed Instance, this view is available only on instances with the
 | `allocation_potential_memory_mb` | int, not null | Memory available to the database engine instance for new allocations, in megabytes. |
 | `external_cache_mb` | int, not null | Memory used by reclaimable caches such as the buffer pool and the columnstore object pool, in megabytes. Under memory pressure, the database engine might shrink these caches to use the memory elsewhere. |
 | `top_clerks` | nvarchar(4000), null | Top memory clerks by memory consumption, including memory usage statistics for each clerk. This information is provided as a JSON value. |
-| `severity_level` | tinyint, not null | A value describing the severity of a memory health issue, one of:<br>1. LOW - No memory health issue is identified.<br>2. MEDIUM - There is medium confidence that a memory health issue might be present. Some attempts to allocate memory might fail. Data cache might be shrinking, and disk I/O can increase as the result.<br>3. HIGH - High confidence that a memory health issue is present. Available memory is likely insufficient, new memory allocation attempts can fail, and disk I/O can increase substantially because data cache is too small. |
+| `severity_level` | tinyint, not null | A value describing the severity of a memory health issue, one of:<br>1. LOW - No memory health issue is identified.<br>2. MEDIUM - There is medium confidence that a memory health issue might be present. Some attempts to allocate memory might fail. Data cache might be shrinking, and disk I/O can increase as the result.<br>3. HIGH - High confidence that a memory health issue is present. Available memory is likely insufficient, new memory allocation attempts can fail, and disk I/O can increase substantially because the size of the remaining data cache is too small. |
 
 ## Permissions
 
