@@ -62,7 +62,7 @@ ORDER BY snapshot_time DESC;
 
 ## Related content
 
-- [sys.dm_os_out_of_memory_events](../../relational-databases/system-catalog-views/sys-dm-os-out-of-memory-events.md)
+- [sys.dm_os_out_of_memory_events](../../relational-databases/system-dynamic-management-views/sys-dm-os-out-of-memory-events.md)
 - [sys.resource_stats](../../relational-databases/system-catalog-views/sys-resource-stats-azure-sql-database.md)
 - [sys.server_resource_stats](../../relational-databases/system-catalog-views/sys-server-resource-stats-azure-sql-database.md)
 - [sys.dm_db_resource_stats (Azure SQL Database)](sys-dm-db-resource-stats-azure-sql-database.md?view=azuresqldb-current&preserve-view=true)
