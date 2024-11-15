@@ -57,7 +57,7 @@ When troubleshooting Database Mail, use `sysmail_help_queue_sp` to see how many 
 
 ## Permissions
 
-By default, only members of the **sysadmin** fixed server role can access this procedure.
+Requires CONTROL SERVER permission on the server.
 
 ## Examples
 

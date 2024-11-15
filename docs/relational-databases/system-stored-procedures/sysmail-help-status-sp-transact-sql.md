@@ -43,7 +43,8 @@ sysmail_help_status_sp
 
 ## Permissions
 
-By default, only members of the **sysadmin** fixed server role can access this procedure.
+Requires CONTROL SERVER permision on the server or membership in the db_owner database role in the msdb-database.
+[!INCLUDE [msdb-execute-permissions](../../includes/msdb-execute-permissions.md)]
 
 ## Examples
 

@@ -73,7 +73,8 @@ The stored procedure `sysmail_configure_sp` is in the `msdb` database and is own
 
 ## Permissions
 
-[!INCLUDE [msdb-execute-permissions](../../includes/msdb-execute-permissions.md)]
+Requires CONTROL SERVER permision on the server or membership in the db_owner database role in the msdb-database.
+You can also grant EXECUTE permissions for any user which allows the user to use this procedure to read the configuration, but not to change any parameters. These added permissions may be overridden during a SQL Server upgrade.
 
 ## Examples
 
