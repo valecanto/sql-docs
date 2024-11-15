@@ -8,7 +8,9 @@ ms.service: sql
 ms.subservice: connectivity
 ms.topic: "reference"
 ---
+
 # Idle connection resiliency in the OLE DB Driver
+
 [!INCLUDE[SQL Server Azure SQL Database](../../../includes/applies-to-version/sqlserver2014-asdb.md)]
 
 [!INCLUDE[Driver_OLEDB_Download](../../../includes/driver_oledb_download.md)]
