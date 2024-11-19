@@ -9,8 +9,9 @@ ms.service: sql
 ms.subservice: tools-other
 ms.topic: conceptual
 ---
-
 # mssql extension for Visual Studio Code
+
+[!INCLUDE [sql-asdb-asdbmi-asa-fabricsqldb](../../includes/applies-to-version/sql-asdb-asdbmi-asa-fabricsqldb.md)]
 
 This article introduces the **mssql** extension for Visual Studio Code (VS Code) to work with databases in SQL Server on Windows, macOS, and Linux, as well as Azure SQL Database and Azure SQL Managed Instance. The [mssql extension for Visual Studio Code](https://aka.ms/mssql-marketplace) provides querying capabilities for Azure SQL and SQL Server as well as additional features for developers with SQL Projects and SQL bindings for Azure Functions. The mssql extension for VS Code includes the [SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension).
 

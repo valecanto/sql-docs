@@ -9,21 +9,21 @@ ms.date: 02/21/2024
 ms.service: azure-sql
 ms.subservice: security
 ms.topic: conceptual
-monikerRange: "= azuresql || = azuresql-db || = azuresql-mi"
+monikerRange: "= azuresql || = azuresql-db || = azuresql-mi ||=fabricsql"
 ---
 
 # Microsoft Entra logins and users with nonunique display names (preview)
-[!INCLUDE[appliesto-sqldb-sqlmi](../includes/appliesto-sqldb-sqlmi.md)]
+[!INCLUDE [appliesto-sqldb-sqlmi-fabricsqldb](../includes/appliesto-sqldb-sqlmi-fabricsqldb.md)]
 
-This article teaches you how to use the T-SQL Object_ID syntax to create Microsoft Entra logins and users with nonunique display names in Azure SQL Database and Azure SQL Managed Instance. 
+This article teaches you how to use the T-SQL `Object_ID` syntax to create Microsoft Entra logins and users with nonunique display names in Azure SQL Database, Fabric SQL database, and Azure SQL Managed Instance. 
 
 > [!NOTE]
-> Using `WITH OBJECT_ID` to create users and logins in Azure SQL is currently in preview. 
+> Using `WITH OBJECT_ID` to create users and logins in Azure SQL is currently in preview.
+> You can create users in Fabric SQL database, but not logins.
 
 ## Overview
 
 Microsoft Entra ID supports authentication for service principals. However, using a service principal with a display name that is not unique in Microsoft Entra ID leads to errors when creating the login or user in Azure SQL. 
-
 
 For example, if the application `myapp` isn't unique, you might run into the following error: 
 

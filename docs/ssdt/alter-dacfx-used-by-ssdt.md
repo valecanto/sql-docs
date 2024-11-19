@@ -9,7 +9,7 @@ ms.service: sql
 ms.subservice: ssdt
 ms.topic: conceptual
 keywords: ssdt dacfx
-monikerRange: ">=aps-pdw-2016||=azuresqldb-current||=azure-sqldw-latest||>=sql-server-2016||=azuresqldb-mi-current"
+monikerRange: ">=aps-pdw-2016 || =azuresqldb-current || =azure-sqldw-latest || >=sql-server-2016 || =azuresqldb-mi-current || =fabric"
 ---
 
 # Alter DacFx used by SQL Server Data Tools (SSDT)
