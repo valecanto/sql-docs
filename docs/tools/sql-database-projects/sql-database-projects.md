@@ -91,6 +91,7 @@ SDK-style projects have a superset of functionality from original SQL projects a
 - [Project-Oriented Offline Database Development](../../ssdt/project-oriented-offline-database-development.md)
 - [SQL Database Projects extension](/azure-data-studio/extensions/sql-database-project-extension)
 - [SqlPackage](../sqlpackage/sqlpackage.md)
+- [Sample CI/CD pipelines for SQL projects](https://github.com/Azure-Samples/sql-projects-devops-samples)
 - [GitHub sql-action](https://github.com/azure/sql-action)
 - [Azure DevOps SQL deployments](/azure/devops/pipelines/targets/azure-sqldb)
 - [Data-tier applications (DAC)](../../relational-databases/data-tier-applications/data-tier-applications.md)

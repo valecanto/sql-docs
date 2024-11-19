@@ -25,7 +25,7 @@ The target platform project property is contained in the `DSP` tag in the `.sqlp
 
 ```xml
 <Project DefaultTargets="Build">
-  <Sdk Name="Microsoft.Build.Sql" Version="0.2.0-preview" />
+  <Sdk Name="Microsoft.Build.Sql" Version="0.2.4-preview" />
   <PropertyGroup>
     <Name>AdventureWorks</Name>
     <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
@@ -41,7 +41,7 @@ Valid values for the target platform in the `DSP` tag include:
 - `Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider` (SQL Server 2019)
 - `Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider` (SQL Server 2022)
 - `Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider` (Azure SQL Database)
-- `Microsoft.Data.Tools.Schema.Sql.SqlDbFabricDatabaseSchemaProvider` (Fabric Mirrored SQL Database, preview)
+- `Microsoft.Data.Tools.Schema.Sql.SqlDbFabricDatabaseSchemaProvider` (SQL database in Fabric or Fabric Mirrored SQL Database, preview)
 - `Microsoft.Data.Tools.Schema.Sql.SqlDwDatabaseSchemaProvider` (Azure Synapse SQL Pool)
 - `Microsoft.Data.Tools.Schema.Sql.SqlServerlessDatabaseSchemaProvider` (Azure Synapse Serverless SQL Pool)
 - `Microsoft.Data.Tools.Schema.Sql.SqlDwUnifiedDatabaseSchemaProvider` (Synapse Data Warehouse in Microsoft Fabric)
