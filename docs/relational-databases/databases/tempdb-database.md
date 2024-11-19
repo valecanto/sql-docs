@@ -126,6 +126,12 @@ You can configure the number of `tempdb` files, their growth increments, and the
 
 To learn more about `tempdb` sizes in Azure SQL Managed Instance, review [resource limits](/azure/azure-sql/managed-instance/resource-limits).
 
+## tempdb in SQL database in Fabric
+
+A [[!INCLUDE [fabric-sqldb](../../includes/fabric-sqldb.md)]](/fabric/database/sql/overview) supports global temporary tables and global temporary stored procedures scoped to the database level, and stored in `tempdb`.  Global temporary tables and global temporary stored procedures are shared for all users' sessions within the same database. User sessions from other databases can't access global temporary tables. For more information, see [Database scoped global temporary tables](../../t-sql/statements/create-table-transact-sql.md#database-scoped-global-temporary-tables-azure-sql-database).
+
+ To learn more about `tempdb` sizes in [!INCLUDE [fabric-sqldb](../../includes/fabric-sqldb.md)], review the Resource Limits in the [Feature comparison: Azure SQL Database and SQL database in Microsoft Fabric](/fabric/database/sql/feature-comparison-sql-database-fabric).
+
 ## Restrictions
 
 The following operations can't be performed on the `tempdb` database:
@@ -231,7 +237,7 @@ Metadata contention in `tempdb` has historically been a bottleneck to scalabilit
 This feature effectively removes this bottleneck and unlocks a new level of scalability for `tempdb`-heavy workloads. In [!INCLUDE[sql-server-2019](../../includes/sssql19-md.md)], the system tables involved in managing temporary table metadata can be moved into latch-free, non-durable, memory-optimized tables.
 
 > [!NOTE]  
-> Currently the Memory-optimized TempDB metadata feature is not available in Azure SQL Database or Azure SQL Managed Instance.
+> Currently the Memory-optimized TempDB metadata feature is not available in Azure SQL Database, [!INCLUDE [fabric-sqldb](../../includes/fabric-sqldb.md)], or Azure SQL Managed Instance.
 
 Watch this seven-minute video for an overview of how and when to use Memory-optimized TempDB metadata:
 

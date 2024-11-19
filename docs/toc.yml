@@ -8137,7 +8137,7 @@ items:
     items:
     - name: Permissions or Securables page
       href: relational-databases/security/permissions-or-securables-page.md
-    - name: Resumable add table contraints
+    - name: Resumable add table constraints
       href: relational-databases/security/resumable-add-table-constraints.md
 - name: Tools
   items:
@@ -13646,6 +13646,8 @@ items:
         href: relational-databases/system-dynamic-management-views/sys-dm-os-memory-cache-hash-tables-transact-sql.md
       - name: sys.dm_os_memory_clerks
         href: relational-databases/system-dynamic-management-views/sys-dm-os-memory-clerks-transact-sql.md
+      - name: sys.dm_os_memory_health_history
+        href: relational-databases/system-dynamic-management-views/sys-dm-os-memory-health-history.md
       - name: sys.dm_os_memory_nodes
         href: relational-databases/system-dynamic-management-views/sys-dm-os-memory-nodes-transact-sql.md
       - name: sys.dm_os_memory_objects
