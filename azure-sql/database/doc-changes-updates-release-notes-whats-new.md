@@ -6,7 +6,7 @@ author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: mathoma, randolphwest
 ms.service: azure-sql-database
-ms.date: 10/22/2024
+ms.date: 11/19/2024
 ms.subservice: service-overview
 ms.topic: whats-new
 ms.custom:
@@ -55,6 +55,7 @@ The following table lists the features of Azure SQL Database that are currently 
 | [License-free standby replica](standby-replica-how-to-configure.md) | Save on licensing costs by configuring your secondary database replica for disaster recovery standby. |
 | [Microsoft Entra nonunique name support](authentication-microsoft-entra-create-users-with-nonunique-names.md) | The [CREATE USER](/sql/t-sql/statements/create-user-transact-sql) Transact-SQL (T-SQL) syntax has been extended to include `WITH OBJECT_ID` to support creating Microsoft Entra logins and users in Azure SQL Database that have nonunique names. |
 | [Microsoft Entra server principals](authentication-azure-ad-logins.md) | Create server principals (logins) for Microsoft Entra identities to use for authentication with Azure SQL Database. |
+| [Network Security Perimeter](network-security-perimeter.md) | Azure Network Security Perimeter allows organizations to define a logical network isolation boundary for PaaS resources (for example, Azure Storage and SQL Database) that are deployed outside your organization’s virtual networks. It restricts public network access to PaaS resources outside of the perimeter, and access can be exempted by using explicit access rules for public inbound and outbound. |
 | [Query editor in the Azure portal](query-editor.md) | The query editor in the portal allows you to run queries against your Azure SQL Database directly from the [Azure portal](https://portal.azure.com). |
 | [SQL Analytics](/azure/azure-monitor/insights/azure-sql) | Azure SQL Analytics is an advanced cloud monitoring solution for monitoring performance of all of your Azure SQL databases at scale and across multiple subscriptions in a single view. Azure SQL Analytics collects and visualizes key performance metrics with built-in intelligence for performance troubleshooting. |
 | [UNISTR (Transact-SQL)](/sql/t-sql/functions/unistr-transact-sql) | Azure SQL Database now supports the `UNISTR` T-SQL syntax for Unicode string literals. For more information, see [UNISTR (Transact-SQL)](/sql/t-sql/functions/unistr-transact-sql).|
@@ -100,6 +101,7 @@ Learn about significant changes to the Azure SQL Database documentation. For pre
 | **Hyperscale single database increased maximum size** | The maximum single database size in Azure SQL Database Hyperscale has been increased from 100 TB to 128 TB. For more information, see [Blog: November 2024 Hyperscale enhancements](https://aka.ms/AAslnql).|
 | **Hyperscale increased log generation rate (preview)**| The transaction log generation rate in Azure SQL Database Hyperscale single databases is set to increase from 100 MB/s to 150 MB/s. The increased log generation rate is available as an opt-in preview feature. For more information and to opt-in to 150 MB/s, see [Blog: November 2024 Hyperscale enhancements](https://aka.ms/AAslnql).|
 | **Hyperscale continuous priming (preview)**| [Continuous priming](service-tier-hyperscale.md#buffer-pool-resilient-buffer-pool-extension-and-continuous-priming) is an innovative new feature is designed to optimize Hyperscale performance during failovers by priming secondary compute replicas. Continuous priming is currently in a gated preview. For more information and to opt-in to continuous priming, see [Blog: November 2024 Hyperscale enhancements](https://aka.ms/AAslnql).|
+| **network-security-perimeter (preview)** | [Network Security Perimeter](network-security-perimeter.md) secures both inbound and outbound network traffic between Azure SQL Database and other Platform as a Service (PaaS) resources, and attempts made to communicate with Azure resources that aren't inside the perimeter are blocked. |
 
 ### October 2024
 
