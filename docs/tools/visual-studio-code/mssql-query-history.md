@@ -9,13 +9,13 @@ ms.service: sql
 ms.subservice: tools-other
 ms.topic: conceptual
 ---
-
 # Query history in the mssql extension
+
+[!INCLUDE [sql-asdb-asdbmi-asa-fabricsqldb](../../includes/applies-to-version/sql-asdb-asdbmi-asa-fabricsqldb.md)]
 
 This article introduces the functionality of query history in the mssql extension for VS Code. Query history is displayed as a section in the SQL Server view, which is available in the side bar by default when the [mssql extension for VS Code](mssql-extensions.md) is installed.
 
 :::image type="content" alt-text="Screenshot of Query History viewlet with a blank area below the header." source="./media/mssql-query-history/query-history-tab.png":::
-
 
 ## View query history
 

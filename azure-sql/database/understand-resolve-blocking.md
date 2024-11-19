@@ -1,7 +1,7 @@
 ---
 title: Understand and resolve blocking problems
 titleSuffix: Azure SQL Database
-description: An overview of Azure SQL database-specific articles on blocking and troubleshooting.
+description: The article describes blocking in Azure SQL Database and Fabric SQL database, and demonstrates how to troubleshoot and resolve blocking.
 author: WilliamDAssafMSFT
 ms.author: wiassaf
 ms.reviewer: wiassaf, mathoma
@@ -11,11 +11,12 @@ ms.subservice: performance
 ms.topic: conceptual
 dev_langs:
   - "TSQL"
+monikerRange: "=azuresql || =azuresql-db || =fabricsql"
 ---
-# Understand and resolve Azure SQL Database blocking problems
-[!INCLUDE[appliesto-sqldb](../includes/appliesto-sqldb.md)]
+# Understand and resolve blocking problems
+[!INCLUDE [appliesto-sqldb-fabricsqldb](../includes/appliesto-sqldb-fabricsqldb.md)]
 
-The article describes blocking in Azure SQL databases and demonstrates how to troubleshoot and resolve blocking. 
+The article describes blocking in Azure SQL Database and Fabric SQL database, and demonstrates how to troubleshoot and resolve blocking.
 
 ## Objective
 
@@ -25,8 +26,9 @@ For information on troubleshooting deadlocks, see [Analyze and prevent deadlocks
 
 > [!NOTE]
 > **This content is focused on Azure SQL Database.** Azure SQL Database is based on the latest stable version of the Microsoft SQL Server database engine, so much of the content is similar though troubleshooting options and tools might differ. For more on blocking in SQL Server, see [Understand and resolve SQL Server blocking problems](/troubleshoot/sql/performance/understand-resolve-blocking).
+> Fabric SQL database shares many features with Azure SQL Database. For more information on performance monitoring, see [Fabric SQL database performance monitoring](/fabric/database/sql/monitor).
 
-## Understand blocking 
+## Understand blocking
  
 Blocking is an unavoidable and by-design characteristic of any relational database management system (RDBMS) with lock-based concurrency. Blocking in a database in Azure SQL Database occurs when one session holds a lock on a specific resource and a second SPID attempts to acquire a conflicting lock type on the same resource. Typically, the time frame for which the first SPID locks the resource is small. When the owning session releases the lock, the second connection is then free to acquire its own lock on the resource and continue processing. This is normal behavior and can happen many times throughout the course of a day with no noticeable effect on system performance.
 

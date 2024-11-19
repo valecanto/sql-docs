@@ -7263,6 +7263,12 @@ items:
       href: sql-server/synapse-link/synapse-link-sql-server-change-feed.md
     - name: Azure Synapse Link for SQL change feed management
       href: sql-server/synapse-link/synapse-link-sql-server-change-feed-manage.md
+  - name: Fabric Databases
+    items:
+    - name: Microsoft Fabric Mirroring
+      href: sql-server/fabric-database/fabric-mirrored-databases.md
+    - name: SQL database in Microsoft Fabric
+      href: sql-server/fabric-database/sql-database-in-fabric.md
   - name: Machine Learning Services > 
     href: machine-learning/
   - name: Analytics Platform System > 

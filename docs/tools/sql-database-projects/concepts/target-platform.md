@@ -15,7 +15,7 @@ zone_pivot_groups: sq1-sql-projects-tools
 
 # Target platform overview
 
-[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance](../../../includes/applies-to-version/sql-asdb-asdbmi.md)]
+[!INCLUDE [SQL Server Azure SQL Database Azure SQL Managed Instance FabricSQLDB](../../../includes/applies-to-version/sql-asdb-asdbmi-fabricsqldb.md)]
 
 The target platform setting is a project property that is used during project build to validate support for features included in the project, such as T-SQL syntax and system functions. The target platform setting is incorporated into the `.dacpac` build artifact and during deployment the target platform setting is checked against the target database to ensure compatibility. If the target platform doesn't match the database, the deployment doesn't begin unless the [publish property](../../sqlpackage/sqlpackage-publish.md#properties-specific-to-the-publish-action) `/p:AllowIncompatiblePlatform=true` is specified.
 

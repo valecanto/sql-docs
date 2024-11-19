@@ -12,21 +12,21 @@ ms.topic: conceptual
 ms.custom:
   - "references_regions"
   - "azure-sql-split"
-monikerRange: "=azuresql||=azuresql-db"
+monikerRange: "=azuresql || =azuresql-db || =fabricsql"
 ---
 
 # Availability through redundancy -  Azure SQL Database
-[!INCLUDE [appliesto-sqldb](../includes/appliesto-sqldb.md)]
+[!INCLUDE [appliesto-sqldb-fabricsqldb](../includes/appliesto-sqldb-fabricsqldb.md)]
 
 > [!div class="op_single_selector"]
 > * [Azure SQL Database](high-availability-sla-local-zone-redundancy.md?view=azuresql-db&preserve-view=true)
 > * [Azure SQL Managed Instance](../managed-instance/high-availability-sla-local-zone-redundancy.md?view=azuresql-mi&preserve-view=true)
 
-This article describes the architecture of Azure SQL Database that achieves availability through local redundancy, and high availability through zone redundancy. 
+This article describes the architecture of Azure SQL Database and SQL database in Fabric that achieves availability through local redundancy, and high availability through zone redundancy.
 
 ## Overview
 
-SQL Database runs on the latest stable version of the SQL Server Database Engine on the Windows operating system with all applicable patches. SQL Database automatically handles critical servicing tasks, such as patching, backups, Windows and SQL engine upgrades, and unplanned events such as underlying hardware, software, or network failures. When a database or elastic pool in SQL Database is patched or fails over, the downtime isn't impactful if you [employ retry logic](develop-overview.md#resiliency) in your app. SQL Database can quickly recover even in the most critical circumstances, ensuring that your data is always available. Most users don't notice that upgrades are performed continuously.
+Azure SQL Database and SQL database in Fabric both run on the latest stable version of the SQL Server Database Engine on the Windows operating system with all applicable patches. SQL Database automatically handles critical servicing tasks, such as patching, backups, Windows and SQL engine upgrades, and unplanned events such as underlying hardware, software, or network failures. When a database or elastic pool in SQL Database is patched or fails over, the downtime isn't impactful if you [employ retry logic](develop-overview.md#resiliency) in your app. SQL Database can quickly recover even in the most critical circumstances, ensuring that your data is always available. Most users don't notice that upgrades are performed continuously.
 
 By default, Azure SQL Database achieves *availability* through local redundancy, making your database available during:
 
