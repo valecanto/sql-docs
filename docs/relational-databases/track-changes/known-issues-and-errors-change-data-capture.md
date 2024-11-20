@@ -159,7 +159,7 @@ These are the different troubleshooting categories included in this section:
 
 * **Recommendation**: Ensure the `cdc` user has the `db_owner` role assigned. To create the `cdc` user, see the example [Create cdc user and assign role](#create-user-and-assign-role).
 
-#### Error 22830 - Could not update the metadata that indicates database AdventureWorks2022 is enabled for Change Data Capture. The failure occurred when executing the command 'sp_cdc_create_functions'. 
+#### Error 22830 - Could not update the metadata that indicates database <database name> is enabled for Change Data Capture. The failure occurred when executing the command 'sp_cdc_create_functions'. 
 
 * **Cause**: presence of a trigger that is inserting data in master database on objects creation.  Enabling cdc is done by a temporary cdc user, so  sp_cdc_create_functions will be executed under this cdc user, the trigger will go off and try to insert data in master database (under the same cdc user) and then this error appears because cdc user does not have required permissions on master database.
 *	**Recommendation**: Before enabling cdc on a database, disable the trigger. Enable the trigger again, once cdc is configured.
